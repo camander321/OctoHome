@@ -25,10 +25,10 @@ def home(request):
         'posts': posts,
         'title': 'Home',
     }
-    return render(request, 'videos/home.html', context)
+    return render(request, 'home/home.html', context)
 
 def help(request):
-    return render(request, 'videos/help.html')
+    return render(request, 'home/help.html')
 
 '''def jsonTest(request):
     data = {

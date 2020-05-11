@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'videos/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/main.css' %}">
 
     {% if title %}
       <title>OctoHome - {{title}}</title>
@@ -26,8 +26,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="{% url 'videos-home' %}">Home</a>
-              <a class="nav-item nav-link" href="{% url 'videos-help' %}">Help</a>
+              <a class="nav-item nav-link" href="{% url 'home-home' %}">Home</a>
+              <a class="nav-item nav-link" href="{% url 'home-help' %}">Help</a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">

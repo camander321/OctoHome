@@ -1,0 +1,29 @@
+{% extends 'videos/base.html' %}
+
+{% block content %}
+  <h1>you've found the home page!</h1>
+  <div class="container">
+    {% for post in posts %}
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{ post.author }}</a>
+          <small class="text-muted">{{ post.date }}</small>
+        </div>
+        <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+        <p class="article-content">{{ post.content }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+
+  <div class="container">
+    <button type="button" name="button">Light On</button>
+    <button type="button" name="button">Light Off</button>
+    <div class="">
+      <img src="http://camandershome.ddns.net:8080/?action=stream" frameborder="0" allowfullscreen></img>
+    </div>
+
+  </div>
+
+{% endblock content %}
